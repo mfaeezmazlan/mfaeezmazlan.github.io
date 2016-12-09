@@ -33,7 +33,7 @@ function editRecord(id){
 
 	$("#inEditID").val(id);
 	$("#inEditName").val(tempName);
-	$("#inEditDetails").val(tempDetails);
+	$("#inEditDetails").val(tempDetails+"sads");
 	$("#inEditStartDate").val(tempStartDate);
 	$("#inEditEndDate").val(tempEndDate);
 }
