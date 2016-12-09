@@ -24,12 +24,18 @@ loadlink();
 function editRecord(id){
 	var inNamePos = $("#tRow_"+id+" td:nth-child(2)"); 
 	var inDetailPos = $("#tRow_"+id+" td:nth-child(3)"); 
+	var inStartDatePos = $("#tRow_"+id+" td:nth-child(4)"); 
+	var inEndDatePos = $("#tRow_"+id+" td:nth-child(5)"); 
 	var tempName = inNamePos.text();
 	var tempDetails = inDetailPos.text();
+	var tempStartDate = inStartDatePos.text();
+	var tempEndDate = inEndDatePos.text();
 
 	$("#inEditID").val(id);
 	$("#inEditName").val(tempName);
 	$("#inEditDetails").val(tempDetails);
+	$("#inEditStartDate").val(tempStartDate);
+	$("#inEditEndDate").val(tempEndDate);
 }
 
 function deleteRecord(id){
